@@ -11,4 +11,5 @@ jobs:
       - uses: actions/checkout@v1
       - name: environment
         run: |
-          env | sort
+          TAG=${GITHUB_REF#refs/tags}
+          echo "Tag is: ${TAG}"
