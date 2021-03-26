@@ -1,5 +1,4 @@
-#!/bin/bash -l
+#!/bin/sh -l
 
-env | sort
+sh -c "env | sort"
 
-echo Hello world my name is ${INPUT_TAG#/refs/tags}
