@@ -1,4 +1,3 @@
-#!/bin/sh -l
+#!/bin/bash
 
-sh -c "echo Hello world my name is ${INPUT_TAG#/refs/tags}"
-
+echo Hello world my name is ${INPUT_TAG#/refs/tags}
